@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mx-auto">
         <a id="btn-accueil" class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#etudesCompetences">Biographie</a>
+        <a id="nav-biographie" class="nav-item nav-link" href="#etudesCompetences">Biographie</a>
         <a class="nav-item nav-link" href="#etudesResume">Compétences</a>
         <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
         <a class="nav-item nav-link" href="#contact">Contact</a>
@@ -40,7 +40,7 @@
     <div>
       <img  id="imageProfil" src="images/accueilKarine.jpg" alt="Karine Dunberry">
     </div>
-    <div>Bonjour à toi! Je m'appelle Karine et je suis...<br><span id="profession">DÉVELOPPEURE WEB FRONT-END</span></div>
+    <div>Bonjour à vous! Je m'appelle Karine et je suis...<br><span id="profession">DÉVELOPPEURE WEB FRONT-END</span></div>
     <form method="get" action="files/CV-DunberryKarine.pdf">
       <button type="submit" class="btn-projets">Télécharger CV</button> <!--télécharger CV, ajouter fichier-->
     </form>
@@ -169,6 +169,7 @@
 
     $(document).ready(function() {
 
+      $("#titreProfession").addClass("animate__animated animate__fadeInLeft");
 
     })
   </script>
