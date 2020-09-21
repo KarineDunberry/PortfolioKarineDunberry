@@ -9,64 +9,156 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link rel="stylesheet" href="CSS/style.css"/>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <!--voir fixed-top-->
-      <a class="navbar-brand" href="index.html"><span id="k">K</span>ARINE DUNBERRY</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-auto">
-          <a id="btn-accueil" class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">CV</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link" href="#">Disabled</a>
-        </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  >
+
+  <!--TEMPLATES-->
+
+
+  <!--base HTML-->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <!--voir fixed-top-->
+    <a class="navbar-brand" href="index.html"><span class="kd">K</span>ARINE DUNBERRY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto">
+        <a id="btn-accueil" class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#etudesCompetences">Biographie</a>
+        <a class="nav-item nav-link" href="#etudesResume">Compétences</a>
+        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+        <a class="nav-item nav-link iconeAccueil" href="#"><i class="fab fa-linkedin"></i></a>
+        <a class="nav-item nav-link iconeAccueil" href="#"><i class="fab fa-github-square"></i></a>
       </div>
-    </nav>
-    <img src="images/accueilKarine.jpg" alt="Photo Karine Dunberry" id="imageAccueil">
-    <div id="titreProfession">
-      <div>Je suis... <br><span id="profession">Développeure Web</span></div>
-      <button type="button" class="btn-projets">Mes projets<i class="fas fa-arrow-right"></i></button>
     </div>
-    
-    <section id="template-bio" class="container">
-      <div class="row">
-        <div class="col-6" id="imgBio">
-          <img src="images/chad-madden-SPIE2JfFNl0-unsplash (1).jpg" alt="">
-          <div class="droitsPhoto">&#169;Photo by Chad Madden on Unsplash</div>
-        </div>
-        <div class="col-6">
-          <h1>JE SUIS... KARINE DUNBERRY</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat sem lectus, non lacinia neque dignissim et. Pellentesque 
-            fermentum vitae nunc eu ultrices. Duis dolor dui, sagittis sit amet ultricies id, blandit a quam. Duis vestibulum blandit diam, non 
-            lacinia lectus ullamcorper sit amet. Proin sodales dolor sed nibh luctus tempus. Integer consectetur arcu nulla, at auctor lorem 
-            interdum non. Sed id tortor velit. Duis pharetra suscipit volutpat.
+  </nav>
+</header>
+<section id="sectionRoseAccueil" class="sectionRose"></section>
+  <div id="titreProfession">
+    <div>
+      <img  id="imageProfil" src="images/accueilKarine.jpg" alt="">
+    </div>
+    <div>Bonjour à toi! Je m'appelle Karine et je suis...<br><span id="profession">DÉVELOPPEURE WEB FRONT-END</span></div>
+    <div>
+      <button type="button" class="btn-projets">Télécharger CV</button>
+    </div>
+  </div> 
 
-            Nunc ac ante at libero fringilla molestie. Vivamus nec diam scelerisque velit lobortis pretium eget laoreet lacus. Integer eget 
-            dignissim dolor. Quisque maximus dui vel nunc tempus malesuada. Pellentesque nulla tellus, tincidunt eget lacinia non, ultrices vel 
-            felis. Nullam vestibulum, magna ut varius pulvinar, purus sem dictum enim, porttitor blandit nisi metus id mi. Pellentesque habitant 
-            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a lorem dictum est mattis rhoncus. Vestibulum tincidunt, 
-            tortor ut rutrum euismod, massa quam ultrices ligula, eu vulputate nunc libero in nisi.
-          </p>
+  <section id="sectionRoseCompetences" class="sectionRose"></section>
+  <div id="etudesCompetences" class="container">
+    <div class="row">
+      <div class="col-12 blocEtudes">
+        <div id="blocBio">
+          <h1>Je suis... <span class="blancPassionnee">PASSIONNÉE</span></h1>
+          <p id="textePresentation" class="mx-auto">Je veux toujours aller plus loin, j'ai une soif d'apprendre. Aspirations: développer compétences en mobile 
+            ou logicielLorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorem sed. Accusantium aliquam quisquam, 
+            officiis esse consequatur saepe provident repellendus porro, odio eveniet dicta dignissimos nihil a autem nostrum velit?</p>
+        </div>
+        <div id="etudesResume">
+          <div id="etudes" class="categorieBoite">
+            <i class="fas fa-graduation-cap rose iconeCategorie"></i>
+            <p>AEC Développement de sites Web transactionnels<br>
+              <span class="infos">En cours, Cégep de Saint-Jean-sur-Richelieu</span></p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="template-projets">
-
-    </section>
-
-    <footer>
-      <div id="contact" class="text-center">
-        <div id="nomContact">KARINE DUNBERRY</div>
-        <div>Granby, Québec, J2H 0H4</div>
-        <div>450-578-0831</div>
-        <div>dunberryk@gmail.com</div>
-        <div>linkedIn</div>
+      <div class="col-3 categorieBoiteExterne">
+        <div class="categorieBoite HTMLBoite">
+          <i class="fab fa-html5 rose iconeCategorie"></i>
+          <h2>HTML</h2>
+          <p>Incluant Bootstrap</p>
+        </div>
       </div>
-    </footer>
+      <div class="col-3 categorieBoiteExterne">
+        <div class="categorieBoite CSSBoite">
+          <i class="fas fa-edit rose iconeCategorie"></i>
+          <h2>CSS</h2>
+          <p>Incluant Google Fonts, Font Awesome, Animate.css</p>
+        </div>
+      </div>
+      <div class="col-3 categorieBoiteExterne">
+        <div class="categorieBoite JSBoite">
+          <i class="fab fa-js-square rose iconeCategorie"></i>
+          <h2>JavaScript</h2>
+          <p>Incluant JQUERY</p>
+        </div>
+      </div>
+      <div class="col-3 categorieBoiteExterne">
+        <div class="categorieBoite PHPBoite">
+          <i class="fab fa-wordpress iconeCategorie"></i> <!--rose: pertinent? voir css aussi-->
+          <h2>Autres</h2>
+          <p>PHP - WordPress - Ajax<br>
+            Asp.Net CORE MVC (C#)</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <section class="sectionBlanche">
+    <div id="portfolio" class="container">
+      <h1>PORTFOLIO</h1>
+      <div class="row"> 
+        <div class="col-4">
+          <div id="todoList" class="projetBoite">
+            <img class="imageProjet" src="images/todoList-md.jpg" alt="visuel de liste de tâches par Karine Dunberry">
+            <div class="overlay">
+              <div class="texteProjet">
+                <div>PROJET DE LISTE DE TÂCHES</div> 
+                <br>
+                <a href="#" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                  Voir sur GitHub
+                </a>
+              </div>       
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div id="laPresse" class="projetBoite">
+            <img class="imageProjet" src="images/reproductionLaPresse-md.jpg" alt="reproduction d'une partie du site de La Presse par Karine Dunberry">
+            <div class="overlay">
+              <div class="texteProjet">
+                <div>REPRODUCTION D'UNE PARTIE DU SITE LAPRESSE.CA</div> 
+                <a href="#" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                  Voir sur GitHub
+                </a>
+              </div>       
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div id="todoList" class="projetBoite">
+            <img class="imageProjet" src="images/sushiBarito-md.jpg" alt="reproduction d'un visuel du site fictif Sushi Barito par Karine Dunberry">
+            <div class="overlay">
+              <div class="texteProjet">
+                <div>REPRODUCTION D'UN VISUEL DU SITE FICTIF SUSHI BARITO</div> 
+                <a href="#" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                  Voir sur GitHub
+                </a>
+              </div>       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="contact" class="text-center">
+      <p><i class="fas fa-code"></i></p>
+      <div id="nomContact">KARINE DUNBERRY</div>
+      <div>Granby, Québec, J2H 0H4</div>
+      <div>450-578-0831</div>
+      <div>dunberryk@gmail.com</div>
+      <div>linkedIn</div>
+      <p id="iconeFooter">
+        <a href=""><i class="fas fa-envelope-square"></i></a>
+        <a href=""></a><i class="fab fa-linkedin"></i></a>
+        <a href=""></a><i class="fab fa-github-square"></i></a>
+      </p>
+    </div>
+  </footer>
     
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>		
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -74,13 +166,9 @@
     
   <script type="text/javascript">
 
-    function clickBtnProjets() {
-
-    }
 
     $(document).ready(function() {
 
-      $('.btn-projets').click(clickBtnProjets);
 
     })
   </script>
