@@ -40,14 +40,14 @@ section.sectionRose
 #sectionRoseAccueil
 {
     height: 450px;
-    top: 480px;
+    top: 500px;
     z-index: -1;
 }
 
 #sectionRoseCompetences
 {
     height: 320px;
-    top: 1270px;
+    top: 1365px;
     z-index: 0;
 }
 
@@ -222,11 +222,10 @@ section.sectionRose
     text-align: center;
 }
 
-.infoLienProjet
+.infoLienProjet, .lienVoirLeSite
 {
     color: white;
     font-size: 0.8em;
-    font-weight: normal;
 }
 
 .infoLienProjet:hover
@@ -238,6 +237,33 @@ section.sectionRose
 {
     color: black;
 }
+
+.lienVoirLeSite
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.lienVoirLeSite:hover
+{
+    background-color: black;
+    border-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+#todoList .lienVoirLeSite
+{
+    visibility: hidden;
+}
+
+.texteProjet p
+{
+    padding-top: 10px;
+}
+
+
 
 
 
@@ -390,8 +416,8 @@ h1, h2
 .iconeOverlay
 {
     color: white;
-    font-size: 5em;
-    margin-top: 20px;
+    font-size: 3em;
+    margin-top: 10px;
 }
 
 .iconeOverlay:hover
