@@ -10,15 +10,11 @@
 	<link rel="stylesheet" href="CSS/style.css"/>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  >
-
-  <!--TEMPLATES-->
-
 
   <!--base HTML-->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <!--voir fixed-top-->
-    <a class="navbar-brand" href="index.html"><span class="kd">K</span>ARINE DUNBERRY</a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-blanc"> <!--voir fixed-top-->
+    <a class="navbar-brand" href="index.html"><span class="kd txt-rose">K</span>ARINE DUNBERRY</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,23 +31,23 @@
     </div>
   </nav>
 </header>
-<section id="sectionRoseAccueil" class="sectionRose"></section>
-  <div id="titreProfession">
+<section id="sectionRoseAccueil" class="sectionRose bg-rose"></section>
+  <div id="titreProfession" class="bg-blanc">
     <div>
       <img  id="imageProfil" src="images/accueilKarine.jpg" alt="Karine Dunberry">
     </div>
-    <div>Bonjour à vous! Je m'appelle Karine et je suis...<br><span id="profession">DÉVELOPPEURE WEB FRONT-END</span></div>
+    <div>Bonjour à vous! Je m'appelle Karine et je suis...<br><span id="profession" class="txt-rose">DÉVELOPPEURE WEB FRONT-END</span></div>
     <a href="files/CV-Karine-Dunberry.pdf" download>
-      <button type="submit" class="btn-projets">Télécharger CV</button> <!--télécharger CV, ajouter fichier-->
+      <button type="submit" class="bg-rose bg-gris-change">Télécharger CV</button>
     </a>
   </div> 
 
-  <section id="sectionRoseCompetences" class="sectionRose"></section>
+  <section id="sectionRoseCompetences" class="sectionRose bg-rose"></section>
   <div id="etudesCompetences" class="container">
     <div class="row">
       <div class="col-12 blocEtudes">
-        <div id="blocBio">
-          <h1>Je suis... <span class="blancPassionnee">PASSIONNÉE</span></h1>
+        <div id="blocBio" class="bg-blanc txt-noir">
+          <h1>Je suis... <span class="txt-rose">PASSIONNÉE</span></h1>
           <p id="textePresentation" class="mx-auto">Me voilà rendue au bout de cette grande aventure qu'est le retour aux études. 
             Je désire me spécialiser dans le développement Web Front-End.
             Ayant toujours l'envie d'aller plus loin, je suis très emballée à l'idée d'entrer dans ce domaine fantastique et en constante évolution.
@@ -61,37 +57,37 @@
             applications mobiles. Au plaisir de vous rencontrer! </p>
         </div>
         <div id="etudesResume">
-          <div id="etudes" class="categorieBoite">
-            <i class="fas fa-graduation-cap rose iconeCategorie"></i>
+          <div id="etudes" class="categorieBoite txt-noir bg-blanc">
+            <i class="fas fa-graduation-cap iconeCategorie txt-turquoise"></i>
             <p>AEC Développement de sites Web transactionnels<br>
               <span class="infos">En cours, Cégep de Saint-Jean-sur-Richelieu</span></p>
           </div>
         </div>
       </div>
       <div class="col-3 categorieBoiteExterne">
-        <div class="categorieBoite HTMLBoite">
-          <i class="fab fa-html5 rose iconeCategorie"></i>
+        <div class="categorieBoite bg-blanc HTMLBoite">
+          <i class="fab fa-html5 iconeCategorie txt-turquoise"></i>
           <h2>HTML</h2>
           <p>Incluant Bootstrap</p>
         </div>
       </div>
       <div class="col-3 categorieBoiteExterne">
-        <div class="categorieBoite CSSBoite">
-          <i class="fas fa-edit rose iconeCategorie"></i>
+        <div class="categorieBoite bg-blanc CSSBoite">
+          <i class="fas fa-edit iconeCategorie txt-turquoise"></i>
           <h2>CSS</h2>
           <p>Incluant Google Fonts, Font Awesome, Animate.css</p>
         </div>
       </div>
       <div class="col-3 categorieBoiteExterne">
-        <div class="categorieBoite JSBoite">
-          <i class="fab fa-js-square rose iconeCategorie"></i>
+        <div class="categorieBoite bg-blanc JSBoite">
+          <i class="fab fa-js-square iconeCategorie txt-turquoise"></i>
           <h2>JavaScript</h2>
           <p>Incluant JQUERY</p>
         </div>
       </div>
       <div class="col-3 categorieBoiteExterne">
-        <div class="categorieBoite PHPBoite">
-          <i class="fab fa-wordpress iconeCategorie"></i> <!--rose: pertinent? voir css aussi-->
+        <div class="categorieBoite bg-blanc PHPBoite">
+          <i class="fab fa-wordpress iconeCategorie txt-turquoise"></i>
           <h2>Autres</h2>
           <p>PHP - WordPress - Ajax<br>
             Asp.Net CORE MVC (C#) - GitHub</p>
@@ -100,18 +96,18 @@
     </div>
   </div>
   
-  <section class="sectionBlanche">
+  <section class="sectionBlanche bg-blanc">
     <div id="portfolio" class="container">
       <h1>PORTFOLIO</h1>
       <div class="row"> 
         <div class="col-4">
           <div id="todoList" class="projetBoite">
             <img class="imageProjet" src="images/todoList-md.jpg" alt="visuel de liste de tâches par Karine Dunberry">
-            <div class="overlay">
-              <div class="texteProjet">
+            <div class="overlay bg-rose">
+              <div class="texteProjet txt-blanc">
                 <div>PROJET DE LISTE DE TÂCHES</div> 
-                <p><a href="#" class="lienVoirLeSite">Voir le site</a></p>
-                <a href="https://github.com/KarineDunberry/Todo-List" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                <p><a href="#" class="lienVoirLeSite txt-blanc">Voir le site</a></p>
+                <a href="https://github.com/KarineDunberry/Todo-List" class="infoLienProjet txt-blanc"><i class="fab fa-github-square iconeOverlay txt-blanc"></i><br>
                   Voir sur GitHub
                 </a>
               </div>       
@@ -121,11 +117,11 @@
         <div class="col-4">
           <div id="laPresse" class="projetBoite">
             <img class="imageProjet" src="images/reproductionLaPresse-md.jpg" alt="reproduction d'une partie du site de La Presse par Karine Dunberry">
-            <div class="overlay">
-              <div class="texteProjet">
+            <div class="overlay bg-rose">
+              <div class="texteProjet txt-blanc">
                 <div>REPRODUCTION D'UNE PARTIE DU SITE LAPRESSE.CA</div> 
-                <p><a href="https://lapresse-karine-dunberry.netlify.app" class="lienVoirLeSite">Voir le site</a></p>
-                <a href="https://github.com/KarineDunberry/Reproduction-LaPresse" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                <p><a href="https://lapresse-karine-dunberry.netlify.app" class="lienVoirLeSite txt-blanc">Voir le site</a></p>
+                <a href="https://github.com/KarineDunberry/Reproduction-LaPresse" class="infoLienProjet txt-blanc"><i class="fab fa-github-square txt-blanc iconeOverlay"></i><br>
                   Voir sur GitHub
                 </a>
               </div>       
@@ -135,11 +131,11 @@
         <div class="col-4">
           <div id="sushi" class="projetBoite">
             <img class="imageProjet" src="images/sushiBarito-md.jpg" alt="reproduction d'un visuel du site fictif Sushi Barito par Karine Dunberry">
-            <div class="overlay">
-              <div class="texteProjet">
+            <div class="overlay bg-rose">
+              <div class="texteProjet txt-blanc">
                 <div>REPRODUCTION D'UN VISUEL DU SITE FICTIF SUSHI BARITO</div> 
-                <p><a href="https://sushi-barito-karine-dunberry.netlify.app" class="lienVoirLeSite">Voir le site</a></p>
-                <a href="https://github.com/KarineDunberry/Reproduction-SushiBarito" class="infoLienProjet"><i class="fab fa-github-square iconeOverlay"></i><br>
+                <p><a href="https://sushi-barito-karine-dunberry.netlify.app" class="lienVoirLeSite txt-blanc">Voir le site</a></p>
+                <a href="https://github.com/KarineDunberry/Reproduction-SushiBarito" class="infoLienProjet txt-blanc"><i class="fab fa-github-square txt-blanc iconeOverlay"></i><br>
                   Voir sur GitHub
                 </a>
               </div>       
@@ -150,17 +146,17 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="bg-rose txt-blanc">
     <div id="contact" class="text-center">
       <p><i class="fas fa-code"></i></p>
-      <div id="nomContact">KARINE DUNBERRY</div>
+      <div id="nomContact" class="txt-noir">KARINE DUNBERRY</div>
       <div>Granby, Québec</div>
       <div>450-578-0831</div>
       <div>dunberryk@gmail.com</div>
       <p id="iconeFooter">
-        <a href="mailto:dunberryk@gmail.com"><i class="fas fa-envelope-square"></i></a>
-        <a href="https://linkedin.com/in/karine-dunberry-5876411b0"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/KarineDunberry"><i class="fab fa-github-square"></i></a>
+        <a href="mailto:dunberryk@gmail.com"><i class="fas fa-envelope-square icone-contact txt-blanc"></i></a>
+        <a href="https://linkedin.com/in/karine-dunberry-5876411b0"><i class="fab fa-linkedin icone-contact txt-blanc"></i></a>
+        <a href="https://github.com/KarineDunberry"><i class="fab fa-github-square icone-contact txt-blanc"></i></a>
       </p>
       <p id="copyright">	&copy;2020, Karine Dunberry, Tous droits réservés</p>
     </div>

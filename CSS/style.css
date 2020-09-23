@@ -5,7 +5,12 @@
 ou jquery if ...css(width) == 950px*/
 
 /*responsive*/
-/*liens: manque cv + lien vers site Netlify projets*/
+/*vidéo todoList*/
+/*optimisation*/
+/*optimisation images: diminuer taille images pour mobile*/
+
+/*variable pour font-family*/
+/*variable pour border-color*/
 
 
 
@@ -17,19 +22,18 @@ body
     background-repeat: repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     position: relative;
 }
 
 section.sectionBlanche
 {
-    background-color: white;
     border-top: 3px solid #ef476f;
     width: 100%;
 }
 
 section.sectionRose
 {
-    background-color: #ef476f;
     position: absolute;
     left: 0px;
     opacity: 0.9;
@@ -39,7 +43,7 @@ section.sectionRose
 #sectionRoseAccueil
 {
     height: 450px;
-    top: 500px;
+    top: 500px; /*height et top en %*/
     z-index: -1;
 }
 
@@ -50,11 +54,42 @@ section.sectionRose
     z-index: 0;
 }
 
+/*couleurs*/
+
+.txt-rose
+{
+    color: #ef476f;
+}
+
+.txt-blanc
+{
+    color: white;
+}
+
+.txt-noir
+{
+    color: black;
+}
+
+.txt-turquoise
+{
+    color: #118ab2;
+}
+
+.bg-rose
+{
+    background-color: #ef476f;
+}
+
+.bg-blanc
+{
+    background-color: white;
+}
+
 
 /*navbar*/
 .navbar
 {
-    background-color: white;
     box-shadow: 0px 0px 20px #6a6d6e;
     padding: 0px 50px;
     width: 100%;
@@ -73,7 +108,6 @@ section.sectionRose
 
 .kd
 {
-    color: #ef476f;
     font-size: 3em;
 }
 
@@ -95,11 +129,6 @@ section.sectionRose
     margin-bottom: -4px;
 }
 
-
-/*templates*/
-
-
-
 /*section etudesCompetences*/
 
 #etudesCompetences
@@ -112,7 +141,6 @@ section.sectionRose
 
 #etudes
 {
-    background-color: white;
     border: 1px solid #aaaaaa;
     border-radius: 20px;
     margin: 10px auto;
@@ -126,7 +154,6 @@ section.sectionRose
 
 .categorieBoite
 {
-    background-color: white;
     border-bottom: 1px solid #aaaaaa;
     /*box-shadow: 5px 5px 20px black;*/
     height: 180px;
@@ -143,10 +170,8 @@ section.sectionRose
 
 #blocBio
 {
-    background-color: white;
     border: 1px solid #aaaaaa;
     border-radius: 20px;
-    color: black;
     margin: 30px auto 30px;
     padding: 20px;
     width: 60%;
@@ -201,7 +226,6 @@ section.sectionRose
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #ef476f;
     border-radius: 20px;
 }
 
@@ -212,7 +236,6 @@ section.sectionRose
 
 .texteProjet
 {
-    color: white;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
     top: 10%;
@@ -223,7 +246,6 @@ section.sectionRose
 
 .infoLienProjet, .lienVoirLeSite
 {
-    color: white;
     font-size: 0.8em;
 }
 
@@ -270,8 +292,6 @@ section.sectionRose
 
 footer
 {
-    background-color: 	#ef476f;
-    color: white;
     font-size: 0.8em;
     letter-spacing: 2px;
     padding: 30px;
@@ -285,7 +305,6 @@ footer
 /*titres*/
 #titreProfession
 {
-    background-color: white;
     border: 1px solid #ef476f;
     border-radius: 20px;
     box-shadow: 2px 2px 20px black;
@@ -302,9 +321,7 @@ footer
 
 #profession
 {
-    color: #ef476f;
-    font-size: 1.5em;
-    
+    font-size: 1.5em;  
 }
 
 h1
@@ -327,19 +344,8 @@ h1, h2
     font-family: 'Titillium Web', sans-serif;
 }
 
-.rose
-{
-    color: #ef476f;
-}
-
-.blancPassionnee
-{
-    color: #ef476f;
-}
-
 #nomContact
 {
-    color: black;
     font-size: 1.5em;
     padding-bottom: 10px;
 }
@@ -396,7 +402,6 @@ h1, h2
 
 .iconeCategorie
 {
-    color: #118ab2;
     font-size: 2em;
     padding: 10px;
 }
@@ -414,7 +419,6 @@ h1, h2
 
 .iconeOverlay
 {
-    color: white;
     font-size: 3em;
     margin-top: 10px;
 }
@@ -424,16 +428,15 @@ h1, h2
     color: black;
 }
 
-#iconeFooter .fa-envelope-square, #iconeFooter .fa-linkedin, #iconeFooter .fa-github-square
+.icone-contact
 {
-    color: white;
     font-size: 3em;
     padding: 30px 10px 10px;
 }
 
-#iconeFooter .fa-envelope-square:hover, #iconeFooter .fa-linkedin:hover, #iconeFooter .fa-github-square:hover
+.icone-contact:hover
 {
-    color: black;
+    color: black; /*classe hover-noir*/
 }
 
 
@@ -441,7 +444,6 @@ h1, h2
 
 button
 {
-    background-color: #ef476f;
     border: none;
     border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -455,7 +457,7 @@ button:hover
     transition: 0.5s;
 }
 
-button:focus
+.bg-gris-change:focus
 {
     background-color: #464545;
     box-shadow: 2px 2px 10px black;
@@ -467,7 +469,7 @@ button:focus
     color: white;
 }
 
-.btn-projets:hover
+.bg-gris-change:hover
 {
     background-color: #464545;
 }
