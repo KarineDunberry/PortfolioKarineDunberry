@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 
-/*vidéo todoList*/
 /*optimisation images: diminuer taille images pour mobile*/
 
 
@@ -448,7 +447,7 @@ h1, h2
 .icone-contact
 {
     font-size: 2.5rem;
-    padding: 30px 10px 10px;
+    padding: 30px 10px 30px;
 }
 
 .icone-contact:hover
