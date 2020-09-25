@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 
-/*media queries pour rappetisser écriture développeuse web + pour diminuer padding navbar
-ou jquery if ...css(width) == 950px*/
-
-/*responsive*/
 /*vidéo todoList*/
-/*optimisation*/
 /*optimisation images: diminuer taille images pour mobile*/
 /*menu hamburger à fermer lorsque click sur lien*/
 
@@ -47,7 +42,7 @@ section.sectionRose
 #sectionRoseAccueil
 {
     height: 16.5%;
-    top: 18%; /*height et top en %*/
+    top: 18%; 
     z-index: -1;
 }
 
@@ -92,6 +87,7 @@ section.sectionRose
 
 
 /*navbar*/
+
 .navbar
 {
     box-shadow: 0px 0px 20px var(--color-grey-shadow);
@@ -165,8 +161,9 @@ section.sectionRose
 
 #profession
 {
-    font-size: 2.5rem;  
+    font-size: 2.3rem;  
 }
+
 
 /*section etudesCompetences*/
 
@@ -194,9 +191,10 @@ section.sectionRose
 .categorieBoite
 {
     border-bottom: 1px solid var(--color-grey-border);
+    border-top: 1px solid var(--color-grey-border);
     height: 180px;
     margin: 30px 0px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -215,19 +213,19 @@ section.sectionRose
     width: 60%;
 }
 
-.HTMLBoite
+.competence1
 {
     border-left: 1px solid var(--color-grey-border);
     border-right: 1px solid var(--color-grey-border);
     border-radius: 20px 0px 0px 20px;
 }
 
-.JSBoite
+.competence3
 {
     border-left: 1px solid var(--color-grey-border);
 }
 
-.PHPBoite
+.competence4
 {
     border-left: 1px solid var(--color-grey-border);
     border-right: 1px solid var(--color-grey-border);
@@ -324,9 +322,6 @@ section.sectionRose
 }
 
 
-
-
-
 /*footer*/
 
 footer
@@ -340,6 +335,7 @@ footer
 {
     font-size: 0.6rem;
 }
+
 
 /*titres*/
 
@@ -369,6 +365,7 @@ h1, h2
     padding-bottom: 10px;
 }
 
+
 /*images*/
 
 #imageProfil
@@ -396,7 +393,6 @@ h1, h2
 {
     transition: 0.5s;
 }
-
 
 
 /*icones*/
@@ -489,45 +485,179 @@ button:hover
 }
 
 
+
+
 /*media queries*/
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
     #titreProfession{
-        /*font-size: 1.7rem;
-        margin: 125px 0px 30px 10%;*/
         width: 60%;
+    }
+    #profession
+    {
+        font-size: 2.3rem;
+    }
+
+    .projetBoite
+    {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sectionRoseAccueil
+    {
+        top: 14%;
+    }
+
+    #sectionRoseCompetences
+    {
+        height: 10%;
+        top: 44.5%;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+
+    .salutation
+    {
+        font-size: 1.3rem;
+    }
+
+    #profession
+    {
+        font-size: 1.8rem;
+    }
+
+    #blocBio
+    {
+        width: 90%;
+    }
+
+    #etudes
+    {
+        width: 90%;
+    }
+
+    #etudesResume
+    {
+        padding: 90px 0px;
+    }
+
+    .competence2
+    {
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .competence3
+    {
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .competence1, .competence2
+    {
+        margin: 30px 0px 0px;
+    }
+
+    .projetBoite
+    {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sectionRoseAccueil
+    {
+        top: 10%;
+    }
+
+    #sectionRoseCompetences
+    {
+        height: 15%;
+        top: 35.5%;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
     #titreProfession{
-        /*font-size: 1.7rem;
-        margin: 125px 0px 30px 10%;*/
         width: 80%;
+    }
+
+    .salutation
+    {
+        font-size: 1.2rem;
+    }
+
+    #profession
+    {
+        font-size: 1.7rem;
+    }
+
+    h1
+    {
+        font-size: 2rem;
+    }
+
+    .projetBoite
+    {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sectionRoseAccueil
+    {
+        top: 10%;
+    }
+
+    #sectionRoseCompetences
+    {
+        height: 14%;
+        top: 39%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #titreProfession{
+    h1
+    {
+        font-size: 1.8rem;
+    }
+
+    #titreProfession
+    {
         border: none;
-        border-radius: 0px;  /*reste changer font-size développeur*/
+        border-radius: 0px;
         font-size: 1.2rem;
         margin: 125px auto 30px;
         width: 100%;
     }
+
+    #etudesResume
+    {
+        padding: 90px 0px;
+    }
+
+    .border-sm
+    {
+        border-radius: 0px;
+    }
+
+    .projetBoite
+    {
+        width: 80%;
+    }
+
+    #sectionRoseAccueil
+    {
+        top: 9%;
+    }
+
+    #sectionRoseCompetences
+    {
+        height: 15%;
+        top: 38%;
+    }
+   
+
 }
-
-/*Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {...}
-
-Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {...}
-
-Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {...}
-
-Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}
-
-Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...}*/
