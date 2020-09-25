@@ -4,6 +4,7 @@
 /*vidéo todoList*/
 /*optimisation images: diminuer taille images pour mobile*/
 /*menu hamburger à fermer lorsque click sur lien*/
+/*centrer texte projet en hauteur???*/
 
 
 body
@@ -274,10 +275,6 @@ section.sectionRose
 .texteProjet
 {
     font-family: var(--font-titillium);
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0%);
     text-align: center;
 }
 
@@ -530,6 +527,11 @@ button:hover
         font-size: 1.8rem;
     }
 
+    .nav-item
+    {
+        padding: 3px;
+    }
+
     #blocBio
     {
         width: 90%;
@@ -624,6 +626,11 @@ button:hover
         font-size: 1.8rem;
     }
 
+    .navbar
+    {
+        padding: 0px 25px;
+    }
+
     .navbar-brand
     {
         font-size: 1.2rem;
@@ -632,11 +639,6 @@ button:hover
     .navbar-toggler
     {
         margin: 10px 0px;
-    }
-
-    .nav-item
-    {
-        padding: 3px;
     }
 
     #titreProfession
@@ -656,7 +658,7 @@ button:hover
     .border-sm
     {
         border-radius: 0px;
-        height: 200px;
+        height: 210px;
     }
 
     .projetBoite
@@ -681,14 +683,17 @@ button:hover
 @media screen and (max-width: 450px) {
     .projetBoite
     {
-        width: 90%;
+        width: 98%;
     }
 
-    
+    .texteProjet
+    {
+        font-size: 0.8rem;
+    }
 
     #sectionRoseCompetences
     {
         height: 15%;
-        top: 45%;
+        top: 41%;
     }
 }
