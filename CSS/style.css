@@ -624,6 +624,21 @@ button:hover
         font-size: 1.8rem;
     }
 
+    .navbar-brand
+    {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler
+    {
+        margin: 10px 0px;
+    }
+
+    .nav-item
+    {
+        padding: 3px;
+    }
+
     #titreProfession
     {
         border: none;
@@ -641,6 +656,7 @@ button:hover
     .border-sm
     {
         border-radius: 0px;
+        height: 200px;
     }
 
     .projetBoite
@@ -660,4 +676,19 @@ button:hover
     }
    
 
+}
+
+@media screen and (max-width: 450px) {
+    .projetBoite
+    {
+        width: 90%;
+    }
+
+    
+
+    #sectionRoseCompetences
+    {
+        height: 15%;
+        top: 45%;
+    }
 }
