@@ -3,8 +3,6 @@
 
 /*vidéo todoList*/
 /*optimisation images: diminuer taille images pour mobile*/
-/*menu hamburger à fermer lorsque click sur lien*/
-/*centrer texte projet en hauteur???*/
 
 
 body
@@ -170,7 +168,7 @@ section.sectionRose
 
 #etudesCompetences
 {
-    margin: auto;
+    margin: 0px auto 60px;
     padding-bottom: 100px;
     padding-top: 100px;
     text-align: center;
@@ -193,7 +191,10 @@ section.sectionRose
 {
     border-bottom: 1px solid var(--color-grey-border);
     border-top: 1px solid var(--color-grey-border);
-    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
     margin: 30px 0px;
     padding: 10px;
     text-align: center;
@@ -217,8 +218,12 @@ section.sectionRose
 .competence1
 {
     border-left: 1px solid var(--color-grey-border);
-    border-right: 1px solid var(--color-grey-border);
     border-radius: 20px 0px 0px 20px;
+}
+
+.competence2
+{
+    border-left: 1px solid var(--color-grey-border);
 }
 
 .competence3
@@ -274,8 +279,13 @@ section.sectionRose
 
 .texteProjet
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     font-family: var(--font-titillium);
-    text-align: center;
+    padding: 20px; 
 }
 
 .infoLienProjet, .lienVoirLeSite
@@ -306,11 +316,6 @@ section.sectionRose
     border-color: var(--color-black);
     color: var(--color-white);
     text-decoration: none;
-}
-
-#todoList .lienVoirLeSite
-{
-    visibility: hidden;
 }
 
 .texteProjet p
